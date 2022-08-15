@@ -1,0 +1,101 @@
+:root{
+    font-family: sans-serif;
+}
+.user-card{
+    width: 200px;
+    height: 250px;
+    border: 1pt solid rgb(0, 247, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(0, 247, 255);
+    display: inline-flex;
+    margin: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 1s;
+}
+.user-card:hover{
+    background-color: rgb(0, 247, 255);
+}
+.user-image{
+    width: 160px;
+    height: 160px;
+    margin: 5px auto 5px auto;
+    border: 1pt solid black;
+    border-radius: 80px;
+    background-size: cover;
+}
+.user-name, .user-dept, .user-roll{
+    display: flex;
+    text-align: center;
+}
+#user-cards{
+    margin: auto;
+}
+#profile-box{
+    background-color: rgba(20, 20, 20, 0.5);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+#profile{
+    border-radius: 10px;
+    margin: 20px auto;
+    z-index: 6;
+    width: 860px;
+    height: 500px;
+    background-color: white;
+}
+#close-profile{
+    float:right;
+    font-size: 36px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+#details{
+    font-size: 18px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    width: 300px;
+    border-right: 2pt solid rgb(0, 247, 255);    
+}
+#family{
+    font-size: 18px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    width: 500px;
+}
+#profile-image{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border: 2pt solid white;
+    border-radius: 75px;
+    background-size: cover;
+}
+#profile-name{
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+}
+#family-parent, .brother, .child{
+    cursor: pointer;
+    margin: 5px 5px;
+    display: inline-flex;
+    padding: 10px;
+    border: 1pt solid rgb(0, 247, 255);
+    box-shadow: 2px 2px rgb(0, 247, 255);
+}
+#family-parent:hover, .brother:hover, .child:hover{
+    background-color: rgb(0, 247, 255);
+}
